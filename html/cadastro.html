@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="pt-br" />
+<meta name="author" content="Pedro Henrique Lopez" />
+<meta name="keywords" content="cadastro, formulario, criar conta" />
+<meta name="description" content="Crie sua conta no TocaMix e personalize suas preferencias" />
+<title>TocaMix - Cadastro</title>
+</head>
+<body>
+
+<header>
+<img src="../img/logo.png" alt="Logo TocaMix" width="80" height="80" />
+<h1>TocaMix</h1>
+</header>
+
+<nav>
+<a href="index.html">Voltar para a tela inicial</a> |
+<a href="login.html">Ja tenho conta, quero entrar</a>
+</nav>
+
+<hr />
+
+<main>
+
+<h2>Criar Conta</h2>
+<p>Preencha seus dados para comecar a ouvir.</p>
+
+<form action="inicio.html" method="get">
+
+<fieldset>
+<legend>Dados Pessoais</legend>
+
+<label for="nome">Nome completo:</label><br />
+<input type="text" id="nome" name="nome" placeholder="Digite seu nome completo" required /><br /><br />
+
+<label for="email">E-mail:</label><br />
+<input type="email" id="email" name="email" placeholder="exemplo@email.com" required /><br /><br />
+
+<label for="senha">Senha:</label><br />
+<input type="password" id="senha" name="senha" placeholder="Minimo 6 caracteres" required /><br /><br />
+
+<label for="nascimento">Data de nascimento:</label><br />
+<input type="date" id="nascimento" name="nascimento" /><br /><br />
+
+<label for="foto">Foto de perfil:</label><br />
+<input type="file" id="foto" name="foto" />
+
+</fieldset>
+
+<fieldset>
+<legend>Preferencias Musicais</legend>
+
+<label for="genero-favorito">Genero favorito:</label><br />
+<input list="generos" id="genero-favorito" name="genero-favorito" placeholder="Digite ou escolha um genero" />
+<datalist id="generos">
+<option value="MPB">
+<option value="Sertanejo">
+<option value="Funk">
+<option value="Rock Nacional">
+<option value="Eletronica">
+</datalist>
+<br /><br />
+
+<p>Generos que voce curte (marque todos que se aplicam):</p>
+<input type="checkbox" id="g1" name="generos-favoritos" value="mpb" />
+<label for="g1">MPB</label><br />
+<input type="checkbox" id="g2" name="generos-favoritos" value="sertanejo" />
+<label for="g2">Sertanejo</label><br />
+<input type="checkbox" id="g3" name="generos-favoritos" value="funk" />
+<label for="g3">Funk</label><br />
+<input type="checkbox" id="g4" name="generos-favoritos" value="rock" />
+<label for="g4">Rock Nacional</label><br /><br />
+
+<p>Tipo de plano:</p>
+<input type="radio" id="plano-gratis" name="plano" value="gratis" checked />
+<label for="plano-gratis">Gratuito (com anuncios)</label><br />
+<input type="radio" id="plano-premium" name="plano" value="premium" />
+<label for="plano-premium">Premium (sem anuncios)</label><br /><br />
+
+<label for="cor-tema">Cor do seu tema de perfil:</label>
+<input type="color" id="cor-tema" name="cor-tema" />
+
+</fieldset>
+
+<br />
+<input type="submit" value="Cadastrar e entrar" />
+
+</form>
+
+</main>
+
+<hr />
+
+<footer>
+<p>&copy; 2026 TocaMix - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>

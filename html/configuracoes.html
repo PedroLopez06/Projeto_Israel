@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+<meta http-equiv="content-language" content="pt-br" />
+<meta name="author" content="Pedro Henrique Lopez" />
+<meta name="keywords" content="configuracoes, conta, privacidade" />
+<meta name="description" content="Ajuste as configuracoes da sua conta no TocaMix" />
+<title>TocaMix - Configuracoes</title>
+</head>
+<body>
+
+<header>
+<img src="../img/logo.png" alt="Logo TocaMix" width="60" height="60" />
+<h1>TocaMix</h1>
+</header>
+
+<nav>
+<a href="inicio.html">Inicio</a> |
+<a href="explorar.html">Explorar</a> |
+<a href="player.html">Tocando Agora</a> |
+<a href="biblioteca.html">Biblioteca</a> |
+<a href="playlists.html">Playlists</a> |
+<a href="artista.html">Artistas</a> |
+<a href="album.html">Albuns</a> |
+<a href="configuracoes.html">Configuracoes</a> |
+<a href="perfil.html">Perfil</a>
+</nav>
+
+<hr />
+
+<main>
+
+<h2>Configuracoes da Conta</h2>
+
+<img src="../img/avatar-padrao.png" alt="Avatar do usuario" width="100" />
+
+<form action="configuracoes-salvas.html" method="post">
+
+<fieldset>
+<legend>Conta</legend>
+
+<label for="nome-usuario">Nome de usuario:</label><br />
+<input type="text" id="nome-usuario" name="nome-usuario" placeholder="Digite seu nome de usuario" required /><br /><br />
+
+<label for="idioma">Idioma preferido:</label><br />
+<input list="idiomas" id="idioma" name="idioma" placeholder="Digite ou escolha um idioma" />
+<datalist id="idiomas">
+<option value="Portugues (Brasil)">
+<option value="Ingles">
+<option value="Espanhol">
+</datalist>
+
+</fieldset>
+
+<fieldset>
+<legend>Aparencia</legend>
+
+<label for="cor-fundo">Cor de fundo do player:</label>
+<input type="color" id="cor-fundo" name="cor-fundo" /><br /><br />
+
+<label for="volume-padrao">Volume padrao ao abrir o app:</label><br />
+<input type="range" id="volume-padrao" name="volume-padrao" min="0" max="100" />
+
+</fieldset>
+
+<fieldset>
+<legend>Privacidade</legend>
+
+<input type="radio" id="perfil-publico" name="privacidade" value="publico" checked />
+<label for="perfil-publico">Perfil publico</label><br />
+<input type="radio" id="perfil-privado" name="privacidade" value="privado" />
+<label for="perfil-privado">Perfil privado</label>
+
+</fieldset>
+
+<br />
+<input type="submit" value="Salvar alteracoes" />
+
+</form>
+
+<hr />
+
+<section>
+<h2>Ajuda e Informacoes</h2>
+
+<p>Nesta area voce encontra o suporte ao usuario e as informacoes sobre a
+plataforma.</p>
+
+<details>
+<summary>Entrar em contato com a assistencia</summary>
+<p>Esta com algum problema tecnico, duvida ou sugestao? Nossa equipe de
+suporte responde em ate <mark>48 horas uteis</mark>.</p>
+<form action="contato.html" method="get">
+<input type="submit" value="Ir para o Contato" />
+</form>
+</details>
+
+<details>
+<summary>Sobre o TocaMix</summary>
+<p>Conheca a historia da plataforma, nossos valores e onde estamos
+localizados.</p>
+<form action="sobre.html" method="get">
+<input type="submit" value="Ir para o Sobre" />
+</form>
+</details>
+
+</section>
+
+</main>
+
+<hr />
+
+<footer>
+<p>&copy; 2026 TocaMix - Todos os direitos reservados.</p>
+</footer>
+
+</body>
+</html>
